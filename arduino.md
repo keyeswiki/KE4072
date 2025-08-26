@@ -15,6 +15,20 @@ Arduino平台支持多种传感器和模块，适用于物联网（IoT）相关�
 
 ## 3. 测试代码  
 
+- 下载资料：[Arduino](./Arduino.7z)
+
+- 打开Arduino IDE，选择“项目”，选择“导入库”，再选择“添加.ZIP库”。
+
+  ![](./media/image-20250818134942206.png)
+
+- 找到下载资料的存放位置，打开文件夹找到库文件，选择要导入的库，点击“打开”。
+
+  ![](./media/image-20250818135210302.png)
+
+- 安装成功出现的界面。
+
+  ![](./media/image-20250818135228082.png)
+
 ```cpp  
 #include <Wire.h>  
 #include "RtcDS1307.h" // DS1307时钟模块的库  
@@ -45,7 +59,7 @@ void loop() {
     Serial.println(Rtc.GetDateTime().DayOfWeek());  
     delay(1000); // 延时1秒  
 }  
-```  
+```
 
 ## 4. 代码说明  
 
